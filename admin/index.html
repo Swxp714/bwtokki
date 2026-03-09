@@ -471,7 +471,7 @@
 
   <script>
     // ── 인증 ──
-    const PW_HASH = '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8'; // "password"
+    const PW_HASH = '0aa28ff41b0c505cf6a8f497568a465452c26a31658a2d9d4ced08a2e7ced548';
 
     async function hashPw(pw) {
       const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(pw));
