@@ -157,13 +157,13 @@
 
     /* ── 메인 프로젝트 ── */
     .main-project {
-      --_fs: calc((100vh - var(--header-height, 0px) - 120px) / 4.93);
+      --_fs: calc((100vh - var(--header-height, 0px)) / 4.93);
       --_gap: calc(var(--_fs) * 0.25);
       display: flex;
       padding: 0 0 0 var(--_gap);
       width: 100%;
-      height: calc(100vh - var(--header-height, 0px) - 120px);
-      margin-top: 120px;
+      height: calc(100vh - var(--header-height, 0px));
+      margin-top: 0;
       overflow: hidden;
     }
 
@@ -426,7 +426,7 @@
     /* ── 반응형 ── */
     @media (max-width: 768px) {
       .header { padding: var(--space-md) var(--space-lg); }
-      .main-project { margin-top: 60px; height: calc(100vh - var(--header-height, 0px) - 60px); --_fs: calc((100vh - var(--header-height, 0px) - 60px) / 4.93); }
+      .main-project { margin-top: 0; height: calc(100vh - var(--header-height, 0px)); --_fs: calc((100vh - var(--header-height, 0px)) / 4.93); }
       .sub-projects { padding: 0 var(--space-lg) var(--space-3xl); }
       .sub-track { gap: var(--space-md); overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
       .sub-track::-webkit-scrollbar { display: none; }
