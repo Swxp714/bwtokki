@@ -187,33 +187,19 @@
       min-width: 0;
     }
 
-    .main-project-card a {
-      display: block;
+    .main-project-card {
       position: relative;
       overflow: hidden;
       height: 100%;
-      background: var(--surface-card);
-      border: none;
-      transition: transform var(--transition-base);
     }
 
-    .main-project-card a:hover {
-    }
-
-    .main-video-placeholder {
+    .main-project-card iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
       height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: var(--space-md);
-      color: var(--text-faint);
-    }
-
-    .main-video-placeholder svg {
-      width: 64px;
-      height: 64px;
+      border: none;
     }
 
     /* ── 서브 프로젝트 ── */
@@ -462,14 +448,11 @@
   <section class="main-project">
     <div class="main-project-label">PROJECT</div>
     <div class="main-project-card">
-    <a href="#">
-      <div class="main-video-placeholder">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <polygon points="5,3 19,12 5,21" />
-        </svg>
-        <span>게임 트레일러 영상 영역</span>
-      </div>
-    </a>
+      <iframe
+        src="https://www.youtube-nocookie.com/embed/7NuNNyoe5fg?autoplay=1&mute=1&loop=1&playlist=7NuNNyoe5fg&controls=0&rel=0&modestbranding=1&playsinline=1"
+        allow="autoplay; encrypted-media"
+        allowfullscreen
+      ></iframe>
     </div>
   </section>
 
